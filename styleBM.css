@@ -1,0 +1,87 @@
+*{margin: 0; padding: 0;font-family: 'Old Standard TT', serif;}
+:root {
+	--background: #00000044;
+	--glow-object: #a530ff;
+	--glow-object-grad: linear-gradient(to bottom right, #9d1fff, #bf1fff);
+	--glow-object-grad-text: linear-gradient(to bottom right, #d770ff, #bc85ff);
+	--glow-shadow: #7900ff;
+	--glow-shadow-text: #7900ffbb;
+	--text: #111112;
+}
+.container{
+     display: grid;
+     justify-content: center;
+     align-content: center;
+     min-height: 100vh;
+     grid-template-columns: 30vw;
+     grid-template-rows: repeat(3,10vh) 5vh repeat(2,10vh);
+     grid-gap: 10px;
+     
+}
+
+body{
+
+    background: #7900ff;
+}
+
+
+.bg {
+	position: fixed;
+	inset: 0;
+	z-index: -1;
+	background:
+		linear-gradient(#23004a55, #23004a99), url("https://media.idownloadblog.com/wp-content/uploads/2021/06/macOS-Monterey-wallpaper-Dark.jpg") center center / cover;
+}
+h1{
+    text-align: center;
+    color: hwb(0 91% 8%);
+}
+.submit-btn{
+    background-color: hsl(17, 73%, 50%);
+}
+.bmi-value{
+    background-color: hsl(17, 71%, 45%);
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+.status{
+    background-color: rgb(210, 156, 74);
+    display: grid;
+    grid-template-rows: 50% 50%;
+    
+}
+.container > div{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    border-radius: 10px;
+}
+button,input{
+    min-width: 100%;
+    min-height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.5vw;
+    border-radius: 8px;
+}
+input{
+    background: hsl(157, 58%, 69%);
+    text-indent: 1.5em;
+    max-width:100% ;
+    color: black;
+    outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+button{
+    background: hsl(72, 78%, 51%);
+    cursor: pointer;
+}
+button:hover{
+    background: hsl(71, 87%, 50%);
+    color: rgb(18, 17, 17);
+}
